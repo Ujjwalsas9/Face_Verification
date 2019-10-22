@@ -1,5 +1,5 @@
 # USAGE
-# python compare_faces_images.py --first-image images/sam.png --second-image images/sam_pan_card.png
+# python compare_faces_images.py --first-image images/saif.png --second-image images/saif_2.png
 # --detection-method hog
 
 # import required packages
