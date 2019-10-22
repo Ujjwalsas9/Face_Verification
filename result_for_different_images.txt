@@ -1,0 +1,4 @@
+Test Accuracy on different images is: 100.00%
+Precision on the different images is: 1.00
+Recall on different images is: 1.00
+F_score on different images is: 1.00
