@@ -8,9 +8,9 @@ import os
 from compare_faces_images import compare_faces
 import csv
 
-test_data_path_1 = '/home/FaceIDAdrian/VGGFace2Data/New_Image_Test_Data/African/Male_Different'
-test_data_path_2 = '/home/FaceIDAdrian/VGGFace2Data/Test_Data_With_Different_ImagePair'
-test_data_path_3 = '/home/FaceIDAdrian/VGGFace2Data/Test_Data_With_Human_ObjectPair'
+test_data_path_1 = '/home/New_Image_Test_Data/African/Male_Different'
+test_data_path_2 = '/home/Test_Data_With_Different_ImagePair'
+test_data_path_3 = '/home/Test_Data_With_Human_ObjectPair'
 
 """
 Make test_data_path = test_data_path_1 for comparing "Same" images and
@@ -23,7 +23,7 @@ folders = sorted(os.listdir(test_data_path))
 
 result = []
 if test_data_path == test_data_path_1:
-    results_xl = os.path.join(os.getcwd(), '/home/FaceIDAdrian/VGGFace2Data/New_Image_Test_Data/African/Male_Different/results_different.csv')
+    results_xl = os.path.join(os.getcwd(), '/home/New_Image_Test_Data/African/Male_Different/results_different.csv')
 elif test_data_path == test_data_path_2:
     results_xl = os.path.join(os.getcwd(), 'results_different.csv')
 elif test_data_path == test_data_path_3:
