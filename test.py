@@ -2,11 +2,11 @@ import os
 from compare_faces_images import compare_faces
 import csv
 
-test_data_path = '/home/xmplar/xfact/FaceIDAdrian/VGGFace2Data/train'
+test_data_path = '/home/train'
 folders = sorted(os.listdir(test_data_path))
 
 result = []
-results_xl = os.path.join("/home/xmplar/xfact/FaceIDAdrian/VGGFace2Data", 'results.csv')
+results_xl = os.path.join("/home/", 'results.csv')
 with open(results_xl, 'w') as outcsv:
     writer = csv.writer(outcsv)
     writer.writerow(['Folder name', 'Total Images', 'Match', 'No match', 'No face', 'Multiple Face', 'Resolution', 'Accuracy'])
